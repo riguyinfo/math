@@ -10,19 +10,26 @@
       font-family: sans-serif;
       margin: 0;
       padding: 20px;
+      position: relative;
     }
     h1 {
       text-align: center;
       font-size: 3em;
       margin-bottom: 40px;
     }
+    .games-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
     .game {
+      flex: 1 1 calc(50% - 40px);
       text-align: center;
-      margin-bottom: 60px;
     }
     .game img {
       width: 100%;
-      max-width: 1920px;
+      max-width: 100%;
       height: auto;
       cursor: pointer;
     }
@@ -37,45 +44,57 @@
       margin-left: auto;
       margin-right: auto;
     }
+    .corner-image {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 128px;
+      height: 128px;
+    }
   </style>
 </head>
 <body>
+  <!-- Top-right corner image (Replace 'riguystudios.png' with your image path if needed) -->
+  <img src="riguystudios.png" alt="RiGuy Studios Logo" class="corner-image">
+
   <h1>MATH GAMES</h1>
 
-  <div class="game">
-    <!-- Replace 'game1.html' and 'game1.png' with your actual link and image -->
-    <a href="game1.html">
-      <img src="game1.png" alt="Game 1">
-    </a>
-    <div class="game-title">Game 1 Title</div>
-    <div class="game-description">Description for Game 1 goes here.</div>
-  </div>
+  <div class="games-container">
+    <div class="game">
+      <!-- Replace 'game1.html' and 'game1.png' with your actual link and image -->
+      <a href="game1.html">
+        <img src="game1.png" alt="Game 1">
+      </a>
+      <div class="game-title">Game 1 Title</div>
+      <div class="game-description">Description for Game 1 goes here.</div>
+    </div>
 
-  <div class="game">
-    <!-- Replace 'game2.html' and 'game2.png' with your actual link and image -->
-    <a href="game2.html">
-      <img src="game2.png" alt="Game 2">
-    </a>
-    <div class="game-title">Game 2 Title</div>
-    <div class="game-description">Description for Game 2 goes here.</div>
-  </div>
+    <div class="game">
+      <!-- Replace 'game2.html' and 'game2.png' with your actual link and image -->
+      <a href="game2.html">
+        <img src="game2.png" alt="Game 2">
+      </a>
+      <div class="game-title">Game 2 Title</div>
+      <div class="game-description">Description for Game 2 goes here.</div>
+    </div>
 
-  <div class="game">
-    <!-- Replace 'game3.html' and 'game3.png' with your actual link and image -->
-    <a href="game3.html">
-      <img src="game3.png" alt="Game 3">
-    </a>
-    <div class="game-title">Game 3 Title</div>
-    <div class="game-description">Description for Game 3 goes here.</div>
-  </div>
+    <div class="game">
+      <!-- Replace 'game3.html' and 'game3.png' with your actual link and image -->
+      <a href="game3.html">
+        <img src="game3.png" alt="Game 3">
+      </a>
+      <div class="game-title">Game 3 Title</div>
+      <div class="game-description">Description for Game 3 goes here.</div>
+    </div>
 
-  <div class="game">
-    <!-- Replace 'game4.html' and 'game4.png' with your actual link and image -->
-    <a href="game4.html">
-      <img src="game4.png" alt="Game 4">
-    </a>
-    <div class="game-title">Game 4 Title</div>
-    <div class="game-description">Description for Game 4 goes here.</div>
+    <div class="game">
+      <!-- Replace 'game4.html' and 'game4.png' with your actual link and image -->
+      <a href="game4.html">
+        <img src="game4.png" alt="Game 4">
+      </a>
+      <div class="game-title">Game 4 Title</div>
+      <div class="game-description">Description for Game 4 goes here.</div>
+    </div>
   </div>
 </body>
 </html>
